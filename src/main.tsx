@@ -23,7 +23,7 @@ createRoot(document.getElementById('root')!).render(
           <AppRoutes />
           <Toaster visibleToasts={1} position='top-right' richColors/>
         </Auth0ProviderWithNavigate>
-        </Router>
+      </Router>
     </QueryClientProvider>
   </StrictMode>,
 )
