@@ -1,4 +1,4 @@
-import {  Auth0Provider } from "@auth0/auth0-react";
+import {  AppState, Auth0Provider } from "@auth0/auth0-react";
 import { useNavigate } from "react-router-dom";
 
 type Props = {
@@ -18,8 +18,8 @@ const Auth0ProviderWithNavigate: React.FC<Props> = ({ children }): JSX.Element =
         throw new Error(`unable to initialise auth ${domain} ${clientId} ${redirect_uri}`)
     }
 
-    const onRedirectCallback = () => {
-        navigate("/auth-callback")
+    const onRedirectCallback = (appState?:AppState) => {
+        navigate(appState?.returnTo || "/auth-callback")
     }
 
     return (
