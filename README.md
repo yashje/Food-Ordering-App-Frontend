@@ -3,7 +3,7 @@
 This project is a frontend web application built with modern tools and libraries like React, Tailwind CSS, and Vite, designed to interface with a food ordering backend system.
 
 ## Deployed Version
-The project is deployed and can be accessed here-```[https://food-ordering-app-frontend-1oly.onrender.com](https://food-ordering-app-frontend-1oly.onrender.com). 
+The project is deployed and can be accessed here-[https://food-ordering-app-frontend-1oly.onrender.com](https://food-ordering-app-frontend-1oly.onrender.com). 
 
 ---
 
