@@ -1,50 +1,111 @@
-# React + TypeScript + Vite
+# Food-Ordering-App-Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a frontend web application built with modern tools and libraries like React, Tailwind CSS, and Vite, designed to interface with a food ordering backend system.
 
-Currently, two official plugins are available:
+## Deployed Version
+The project is deployed and can be accessed here-[https://food-ordering-app-frontend-1oly.onrender.com](https://food-ordering-app-frontend-1oly.onrender.com). Clicking this link will copy it to your clipboard.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```html
+<a href="#" onclick="copyToClipboard('https://food-ordering-app-frontend-1oly.onrender.com')">
+  https://food-ordering-app-frontend-1oly.onrender.com
+</a>
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+<script>
+  function copyToClipboard(text) {
+    navigator.clipboard.writeText(text).then(() => {
+      alert('Copied to clipboard!');
+    }).catch(err => {
+      console.error('Error copying text: ', err);
+    });
+  }
+</script>
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+---
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Prerequisites
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Before starting, ensure you have the following installed:
+- Node.js (version 14 or higher)
+- npm (comes with Node.js)
+
+---
+
+## Getting Started
+
+1. **Clone the repository**:
+   ```bash
+   git clone [<repository-url>](https://github.com/yashje/Food-Ordering-App-frontend)
+   cd frontend
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**:
+   ```bash
+   npm run dev
+   ```
+   This command starts the Vite development server and serves the frontend on a local port.
+
+4. **Building the project**:
+   To build the project for production, run:
+   ```bash
+   npm run build
+   ```
+   The compiled files will be in the `dist` directory.
+
+5. **Preview the production build**:
+   You can preview the production build locally:
+   ```bash
+   npm run preview
+   ```
+
+---
+
+## Scripts
+
+### `npm run dev`
+- Starts the development server with Vite.
+
+### `npm run build`
+- Builds the project for production.
+
+### `npm run preview`
+- Previews the production build locally.
+
+### `npm run lint`
+- Runs ESLint to lint the TypeScript and React code.
+
+---
+
+## Dependencies
+
+### Core Dependencies:
+- `react`: Library for building user interfaces.
+- `react-dom`: For rendering React components.
+- `react-router-dom`: For managing routes and navigation.
+- `tailwindcss`: Utility-first CSS framework.
+- `zod`: For schema validation.
+- `@auth0/auth0-react`: For handling authentication.
+
+### Dev Dependencies:
+- `vite`: Build tool for modern web applications.
+- `typescript`: TypeScript language support.
+- `eslint`: Linting tool for JavaScript and TypeScript.
+- `postcss`: For processing CSS files.
+
+---
+
+## Additional Notes
+
+- **Tailwind CSS**:
+  Ensure Tailwind CSS is properly configured in `tailwind.config.js` to customize your styles.
+
+- **TypeScript**:
+  Ensure TypeScript is installed globally to avoid errors during builds.
+  ```bash
+  npm install -g typescript
+  
