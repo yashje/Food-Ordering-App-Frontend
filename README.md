@@ -19,7 +19,7 @@ Before starting, ensure you have the following installed:
 
 1. **Clone the repository**:
    ```bash
-   git clone [<repository-url>](https://github.com/yashje/Food-Ordering-App-frontend)
+   git clone https://github.com/yashje/Food-Ordering-App-frontend
    cd frontend
    ```
 
