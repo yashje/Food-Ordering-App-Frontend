@@ -5,22 +5,6 @@ This project is a frontend web application built with modern tools and libraries
 ## Deployed Version
 The project is deployed and can be accessed here-[https://food-ordering-app-frontend-1oly.onrender.com](https://food-ordering-app-frontend-1oly.onrender.com). Clicking this link will copy it to your clipboard.
 
-```html
-<a href="#" onclick="copyToClipboard('https://food-ordering-app-frontend-1oly.onrender.com')">
-  https://food-ordering-app-frontend-1oly.onrender.com
-</a>
-
-<script>
-  function copyToClipboard(text) {
-    navigator.clipboard.writeText(text).then(() => {
-      alert('Copied to clipboard!');
-    }).catch(err => {
-      console.error('Error copying text: ', err);
-    });
-  }
-</script>
-```
-
 ---
 
 ## Prerequisites
