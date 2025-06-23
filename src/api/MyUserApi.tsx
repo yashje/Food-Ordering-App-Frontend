@@ -27,7 +27,7 @@ export const useGetMyUser = () => {
   };
 
   const {
-    data: currentUser,
+    data: CurrentUser,
     isLoading,
     error,
   } = useQuery("fetchCurrentUser", getMyUserRequest);
@@ -36,7 +36,7 @@ export const useGetMyUser = () => {
     toast.error(error.toString());
   }
 
-  return { currentUser, isLoading };
+  return { CurrentUser, isLoading };
 };
 
 type CreateUserRequest = {

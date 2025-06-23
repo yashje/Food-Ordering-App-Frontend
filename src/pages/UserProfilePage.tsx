@@ -14,7 +14,7 @@ const UserProfilePage = () => {
     }
 
     return (
-        <UserProfileForm CurrentUser={CurrentUser} onSave={updateUser} isLoading={isUpdateLoading} />
+        <UserProfileForm currentUser={CurrentUser} onSave={updateUser} isLoading={isUpdateLoading} />
     )
 }
 
