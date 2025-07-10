@@ -7,11 +7,12 @@ Deployed here 👉 [Live Demo](https://food-ordering-app-frontend-1oly.onrender.
 
 ## 🚀 Features
 
-✅ Create your own restaurant.
-✅ Browse & order from other restaurants.
-✅ Manage orders.
-✅ Auth via Auth0.
-✅ Fully responsive & stylish.
+- ✅ Create your own restaurant  
+- ✅ Browse & order from other restaurants  
+- ✅ Manage orders  
+- ✅ Auth via Auth0  
+- ✅ Fully responsive & stylish  
+
 
 ---
 
